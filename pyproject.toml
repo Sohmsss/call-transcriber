@@ -1,0 +1,21 @@
+[project]
+name = "calltx"
+version = "0.1.0"
+description = "Interactive CLI that turns call recordings into speaker-labelled transcripts, locally, with Whisper."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Freddie Wild" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "faster-whisper>=1.1",
+    "numpy",
+    "rich>=13",
+    "questionary>=2",
+]
+
+[project.scripts]
+calltx = "calltx.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

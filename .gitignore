@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+dist/
+build/
+*.egg-info/
+
+# never commit recordings or transcripts
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.ogg
+*.opus
+transcripts/
